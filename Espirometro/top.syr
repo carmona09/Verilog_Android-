@@ -1,0 +1,1099 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.09 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.09 secs
+ 
+--> Reading design: top.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "top.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "top"
+Output Format                      : NGC
+Target Device                      : xc3s100e-4-cp132
+
+---- Source Options
+Top Module Name                    : top
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 500
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "Suma_flujo.v" in library work
+Compiling verilog file "State_2.v" in library work
+Module <Suma_flujo> compiled
+Compiling verilog file "StateMachine.v" in library work
+Module <State_2> compiled
+Compiling verilog file "mPerdedor.v" in library work
+Module <StateMachine> compiled
+Compiling verilog file "mOH.v" in library work
+Module <mPerdedor> compiled
+Compiling verilog file "mMux.v" in library work
+Module <mOH> compiled
+Compiling verilog file "mFrecuencia_vga.v" in library work
+Module <mMux> compiled
+Compiling verilog file "mDivisor_1Hz.v" in library work
+Module <ClkDivider> compiled
+Compiling verilog file "mDivisor.v" in library work
+Module <mDivisor_1Hz> compiled
+Compiling verilog file "mDetecto_flancos.v" in library work
+Module <mDivisor> compiled
+Compiling verilog file "mdebouncer1.v" in library work
+Module <mDetecto_flancos> compiled
+Compiling verilog file "mBCD.v" in library work
+Module <mDebouncer1> compiled
+Compiling verilog file "divisor.v" in library work
+Module <mBCD> compiled
+Compiling verilog file "Display_states.v" in library work
+Module <divisor> compiled
+Compiling verilog file "dfgfdg.v" in library work
+Module <Display_states> compiled
+Compiling verilog file "CVP.v" in library work
+Module <VGA640x480> compiled
+Compiling verilog file "corrimiento_suma.v" in library work
+Module <CVP> compiled
+Compiling verilog file "contador1.v" in library work
+Module <corrimiento_suma> compiled
+Compiling verilog file "Comp.v" in library work
+Module <mCounter1> compiled
+Compiling verilog file "Algoritmo_Datos_ADC.v" in library work
+Module <Comp> compiled
+Compiling verilog file "Algoritmo_CVP.v" in library work
+Module <Algoritmo_Datos_ADC> compiled
+Compiling verilog file "top.v" in library work
+Module <Algoritmo_CVP> compiled
+Module <top> compiled
+No errors in compilation
+Analysis of file <"top.prj"> succeeded.
+ 
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for module <top> in library <work>.
+
+Analyzing hierarchy for module <mDebouncer1> in library <work>.
+
+Analyzing hierarchy for module <mDetecto_flancos> in library <work>.
+
+Analyzing hierarchy for module <mCounter1> in library <work>.
+
+Analyzing hierarchy for module <StateMachine> in library <work>.
+
+Analyzing hierarchy for module <corrimiento_suma> in library <work>.
+
+Analyzing hierarchy for module <Algoritmo_Datos_ADC> in library <work>.
+
+Analyzing hierarchy for module <Display_states> in library <work>.
+
+Analyzing hierarchy for module <mMux> in library <work>.
+
+Analyzing hierarchy for module <mDivisor> in library <work>.
+
+Analyzing hierarchy for module <mOH> in library <work>.
+
+Analyzing hierarchy for module <mBCD> in library <work>.
+
+Analyzing hierarchy for module <State_2> in library <work>.
+
+Analyzing hierarchy for module <divisor> in library <work>.
+
+Analyzing hierarchy for module <Suma_flujo> in library <work>.
+
+Analyzing hierarchy for module <Algoritmo_CVP> in library <work>.
+
+Analyzing hierarchy for module <CVP> in library <work>.
+
+Analyzing hierarchy for module <Comp> in library <work>.
+
+Analyzing hierarchy for module <VGA640x480> in library <work> with parameters.
+	MAX_HORIZONTAL_PIXELS = "1100100000"
+	MAX_VERTICAL_LINES = "1000001001"
+
+Analyzing hierarchy for module <ClkDivider> in library <work>.
+
+Analyzing hierarchy for module <mDivisor_1Hz> in library <work>.
+
+Analyzing hierarchy for module <mPerdedor> in library <work>.
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing top module <top>.
+Module <top> is correct for synthesis.
+ 
+Analyzing module <mDebouncer1> in library <work>.
+Module <mDebouncer1> is correct for synthesis.
+ 
+Analyzing module <mDetecto_flancos> in library <work>.
+Module <mDetecto_flancos> is correct for synthesis.
+ 
+Analyzing module <mCounter1> in library <work>.
+Module <mCounter1> is correct for synthesis.
+ 
+Analyzing module <StateMachine> in library <work>.
+Module <StateMachine> is correct for synthesis.
+ 
+Analyzing module <corrimiento_suma> in library <work>.
+Module <corrimiento_suma> is correct for synthesis.
+ 
+Analyzing module <Algoritmo_Datos_ADC> in library <work>.
+Module <Algoritmo_Datos_ADC> is correct for synthesis.
+ 
+Analyzing module <Display_states> in library <work>.
+Module <Display_states> is correct for synthesis.
+ 
+Analyzing module <mMux> in library <work>.
+Module <mMux> is correct for synthesis.
+ 
+Analyzing module <mDivisor> in library <work>.
+Module <mDivisor> is correct for synthesis.
+ 
+Analyzing module <mOH> in library <work>.
+Module <mOH> is correct for synthesis.
+ 
+Analyzing module <mBCD> in library <work>.
+Module <mBCD> is correct for synthesis.
+ 
+Analyzing module <State_2> in library <work>.
+Module <State_2> is correct for synthesis.
+ 
+Analyzing module <divisor> in library <work>.
+Module <divisor> is correct for synthesis.
+ 
+Analyzing module <Suma_flujo> in library <work>.
+Module <Suma_flujo> is correct for synthesis.
+ 
+Analyzing module <Algoritmo_CVP> in library <work>.
+Module <Algoritmo_CVP> is correct for synthesis.
+ 
+Analyzing module <CVP> in library <work>.
+Module <CVP> is correct for synthesis.
+ 
+Analyzing module <Comp> in library <work>.
+Module <Comp> is correct for synthesis.
+ 
+Analyzing module <VGA640x480> in library <work>.
+	MAX_HORIZONTAL_PIXELS = 10'b1100100000
+	MAX_VERTICAL_LINES = 10'b1000001001
+Module <VGA640x480> is correct for synthesis.
+ 
+Analyzing module <ClkDivider> in library <work>.
+Module <ClkDivider> is correct for synthesis.
+ 
+Analyzing module <mDivisor_1Hz> in library <work>.
+Module <mDivisor_1Hz> is correct for synthesis.
+ 
+Analyzing module <mPerdedor> in library <work>.
+Module <mPerdedor> is correct for synthesis.
+ 
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <mDebouncer1>.
+    Related source file is "mdebouncer1.v".
+    Found 1-bit register for signal <rff_Q>.
+    Found 15-bit register for signal <rvFF_Q>.
+    Summary:
+	inferred  16 D-type flip-flop(s).
+Unit <mDebouncer1> synthesized.
+
+
+Synthesizing Unit <mDetecto_flancos>.
+    Related source file is "mDetecto_flancos.v".
+    Found 1-bit register for signal <rff_Q>.
+    Found 4-bit register for signal <rvbotonQ>.
+    Summary:
+	inferred   5 D-type flip-flop(s).
+Unit <mDetecto_flancos> synthesized.
+
+
+Synthesizing Unit <mCounter1>.
+    Related source file is "contador1.v".
+    Found 4-bit up counter for signal <rvFF_Q>.
+    Summary:
+	inferred   1 Counter(s).
+Unit <mCounter1> synthesized.
+
+
+Synthesizing Unit <StateMachine>.
+    Related source file is "StateMachine.v".
+    Found finite state machine <FSM_0> for signal <rvState_Machine_Q>.
+    -----------------------------------------------------------------------
+    | States             | 4                                              |
+    | Transitions        | 10                                             |
+    | Inputs             | 3                                              |
+    | Outputs            | 3                                              |
+    | Clock              | iClk                      (rising_edge)        |
+    | Reset              | iReset                    (positive)           |
+    | Reset type         | synchronous                                    |
+    | Reset State        | 00                                             |
+    | Power Up State     | 00                                             |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Summary:
+	inferred   1 Finite State Machine(s).
+Unit <StateMachine> synthesized.
+
+
+Synthesizing Unit <corrimiento_suma>.
+    Related source file is "corrimiento_suma.v".
+    Found 4-bit adder for signal <$add0000> created at line 82.
+    Found 4-bit adder for signal <$add0001> created at line 91.
+    Found 4-bit adder for signal <$add0002> created at line 98.
+    Found 4-bit adder for signal <$add0003> created at line 107.
+    Found 4-bit register for signal <rvCentQ>.
+    Found 15-bit register for signal <rvCountQ>.
+    Found 4-bit comparator greater for signal <rvD_17$cmp_gt0000> created at line 80.
+    Found 4-bit comparator greater for signal <rvD_21$cmp_gt0000> created at line 89.
+    Found 4-bit comparator greater for signal <rvD_25$cmp_gt0000> created at line 96.
+    Found 4-bit comparator greater for signal <rvD_29$cmp_gt0000> created at line 105.
+    Found 4-bit register for signal <rvDecQ>.
+    Found 4-bit register for signal <rvMillarQ>.
+    Found 30-bit register for signal <rvQ>.
+    Found 4-bit register for signal <rvUnitsQ>.
+    Summary:
+	inferred  61 D-type flip-flop(s).
+	inferred   4 Adder/Subtractor(s).
+	inferred   4 Comparator(s).
+Unit <corrimiento_suma> synthesized.
+
+
+Synthesizing Unit <Algoritmo_Datos_ADC>.
+    Related source file is "Algoritmo_Datos_ADC.v".
+    Found 10-bit register for signal <rv_Flujo_Q>.
+    Summary:
+	inferred  10 D-type flip-flop(s).
+Unit <Algoritmo_Datos_ADC> synthesized.
+
+
+Synthesizing Unit <Display_states>.
+    Related source file is "Display_states.v".
+    Found 4-bit 4-to-1 multiplexer for signal <rvDisplay1_D>.
+    Found 4-bit register for signal <rvDisplay1_Q>.
+    Found 4-bit 4-to-1 multiplexer for signal <rvDisplay2_D>.
+    Found 4-bit register for signal <rvDisplay2_Q>.
+    Found 4-bit 4-to-1 multiplexer for signal <rvDisplay3_D>.
+    Found 4-bit register for signal <rvDisplay3_Q>.
+    Found 4-bit 4-to-1 multiplexer for signal <rvDisplay4_D>.
+    Found 4-bit register for signal <rvDisplay4_Q>.
+    Summary:
+	inferred  16 D-type flip-flop(s).
+	inferred  16 Multiplexer(s).
+Unit <Display_states> synthesized.
+
+
+Synthesizing Unit <mMux>.
+    Related source file is "mMux.v".
+    Found 7-bit register for signal <rvff_Q>.
+    Summary:
+	inferred   7 D-type flip-flop(s).
+Unit <mMux> synthesized.
+
+
+Synthesizing Unit <mDivisor>.
+    Related source file is "mDivisor.v".
+    Found 1-bit register for signal <rFF_Q>.
+    Found 27-bit adder for signal <rvCont_D$addsub0000> created at line 66.
+    Found 27-bit register for signal <rvCont_Q>.
+    Summary:
+	inferred  28 D-type flip-flop(s).
+	inferred   1 Adder/Subtractor(s).
+Unit <mDivisor> synthesized.
+
+
+Synthesizing Unit <mOH>.
+    Related source file is "mOH.v".
+    Found 4-bit register for signal <rvff_Q>.
+    Summary:
+	inferred   4 D-type flip-flop(s).
+Unit <mOH> synthesized.
+
+
+Synthesizing Unit <mBCD>.
+    Related source file is "mBCD.v".
+    Found 16x7-bit ROM for signal <rvFF_7seg>.
+    Found 7-bit register for signal <rv7segmentos>.
+    Summary:
+	inferred   1 ROM(s).
+	inferred   7 D-type flip-flop(s).
+Unit <mBCD> synthesized.
+
+
+Synthesizing Unit <State_2>.
+    Related source file is "State_2.v".
+    Found 2-bit adder for signal <rvCount_LED_D$addsub0000> created at line 48.
+    Found 2-bit register for signal <rvCount_LED_Q>.
+    Found 3-bit register for signal <rvLED_Q>.
+    Summary:
+	inferred   5 D-type flip-flop(s).
+	inferred   1 Adder/Subtractor(s).
+Unit <State_2> synthesized.
+
+
+Synthesizing Unit <divisor>.
+    Related source file is "divisor.v".
+    Found 1-bit register for signal <rMod_Q>.
+    Found 24-bit adder for signal <rvCount_D$addsub0000> created at line 66.
+    Found 24-bit register for signal <rvCount_Q>.
+    Summary:
+	inferred  25 D-type flip-flop(s).
+	inferred   1 Adder/Subtractor(s).
+Unit <divisor> synthesized.
+
+
+Synthesizing Unit <Suma_flujo>.
+    Related source file is "Suma_flujo.v".
+    Found 14-bit adder for signal <rv_Suma_D$addsub0000> created at line 58.
+    Found 14-bit register for signal <rv_Suma_Q>.
+    Summary:
+	inferred  14 D-type flip-flop(s).
+	inferred   1 Adder/Subtractor(s).
+Unit <Suma_flujo> synthesized.
+
+
+Synthesizing Unit <Algoritmo_CVP>.
+    Related source file is "Algoritmo_CVP.v".
+    Found 8-bit adder for signal <rvSuma_d>.
+    Found 4x4-bit multiplier for signal <rvSuma_d$mult0000> created at line 60.
+    Found 8-bit register for signal <rvSuma_q>.
+    Summary:
+	inferred   8 D-type flip-flop(s).
+	inferred   1 Adder/Subtractor(s).
+	inferred   1 Multiplier(s).
+Unit <Algoritmo_CVP> synthesized.
+
+
+Synthesizing Unit <CVP>.
+    Related source file is "CVP.v".
+    Found 9-bit register for signal <rv_CVP_Q>.
+    Summary:
+	inferred   9 D-type flip-flop(s).
+Unit <CVP> synthesized.
+
+
+Synthesizing Unit <Comp>.
+    Related source file is "Comp.v".
+    Found 10x2-bit multiplier for signal <$mult0000> created at line 65.
+    Found 10x3-bit multiplier for signal <$mult0001> created at line 73.
+    Found 10x3-bit multiplier for signal <$mult0002> created at line 77.
+    Found 10x3-bit multiplier for signal <$mult0003> created at line 81.
+    Found 14-bit comparator lessequal for signal <rvSenal_Barquito_D$cmp_le0000> created at line 65.
+    Found 14-bit comparator lessequal for signal <rvSenal_Barquito_D$cmp_le0001> created at line 69.
+    Found 14-bit comparator lessequal for signal <rvSenal_Barquito_D$cmp_le0002> created at line 73.
+    Found 14-bit comparator lessequal for signal <rvSenal_Barquito_D$cmp_le0003> created at line 77.
+    Found 14-bit comparator lessequal for signal <rvSenal_Barquito_D$cmp_le0004> created at line 81.
+    Found 14-bit comparator lessequal for signal <rvSenal_Barquito_D$cmp_le0005> created at line 85.
+    Found 14-bit comparator lessequal for signal <rvSenal_Barquito_D$cmp_le0006> created at line 89.
+    Found 14-bit comparator lessequal for signal <rvSenal_Barquito_D$cmp_le0007> created at line 93.
+    Found 14-bit comparator less for signal <rvSenal_Barquito_D$cmp_lt0000> created at line 57.
+    Found 14-bit comparator less for signal <rvSenal_Barquito_D$cmp_lt0001> created at line 61.
+    Found 10x4-bit multiplier for signal <rvSenal_Barquito_D$mult0000> created at line 89.
+    Found 10x4-bit multiplier for signal <rvSenal_Barquito_D$mult0001> created at line 93.
+    Found 4-bit register for signal <rvSenal_Barquito_Q>.
+    Summary:
+	inferred   4 D-type flip-flop(s).
+	inferred   6 Multiplier(s).
+	inferred  10 Comparator(s).
+Unit <Comp> synthesized.
+
+
+Synthesizing Unit <VGA640x480>.
+    Related source file is "dfgfdg.v".
+    Found 2-bit 4-to-1 multiplexer for signal <BlueOut_d>.
+    Found 2-bit register for signal <BlueOut_q>.
+    Found 3-bit 4-to-1 multiplexer for signal <GreenOut_d>.
+    Found 3-bit register for signal <GreenOut_q>.
+    Found 10-bit adder for signal <HCounter_d$addsub0000> created at line 131.
+    Found 10-bit comparator less for signal <HCounter_d$cmp_lt0000> created at line 129.
+    Found 10-bit register for signal <HCounter_q>.
+    Found 10-bit comparator less for signal <HSync_d$cmp_lt0000> created at line 152.
+    Found 1-bit register for signal <HSync_q>.
+    Found 3-bit 4-to-1 multiplexer for signal <RedOut_d>.
+    Found 10-bit comparator greatequal for signal <RedOut_d$cmp_ge0000> created at line 1217.
+    Found 10-bit comparator greatequal for signal <RedOut_d$cmp_ge0001> created at line 1217.
+    Found 10-bit comparator greatequal for signal <RedOut_d$cmp_ge0002> created at line 1223.
+    Found 10-bit comparator greatequal for signal <RedOut_d$cmp_ge0003> created at line 1223.
+    Found 10-bit comparator greatequal for signal <RedOut_d$cmp_ge0004> created at line 318.
+    Found 10-bit comparator greatequal for signal <RedOut_d$cmp_ge0005> created at line 318.
+    Found 10-bit comparator greatequal for signal <RedOut_d$cmp_ge0006> created at line 324.
+    Found 10-bit comparator greatequal for signal <RedOut_d$cmp_ge0007> created at line 330.
+    Found 10-bit comparator greatequal for signal <RedOut_d$cmp_ge0008> created at line 330.
+    Found 10-bit comparator greatequal for signal <RedOut_d$cmp_ge0009> created at line 337.
+    Found 10-bit comparator greatequal for signal <RedOut_d$cmp_ge0010> created at line 343.
+    Found 10-bit comparator greatequal for signal <RedOut_d$cmp_ge0011> created at line 343.
+    Found 10-bit comparator greatequal for signal <RedOut_d$cmp_ge0012> created at line 349.
+    Found 10-bit comparator greatequal for signal <RedOut_d$cmp_ge0013> created at line 355.
+    Found 10-bit comparator greatequal for signal <RedOut_d$cmp_ge0014> created at line 355.
+    Found 10-bit comparator greatequal for signal <RedOut_d$cmp_ge0015> created at line 361.
+    Found 10-bit comparator greatequal for signal <RedOut_d$cmp_ge0016> created at line 367.
+    Found 10-bit comparator greatequal for signal <RedOut_d$cmp_ge0017> created at line 367.
+    Found 10-bit comparator greatequal for signal <RedOut_d$cmp_ge0018> created at line 373.
+    Found 10-bit comparator greatequal for signal <RedOut_d$cmp_ge0019> created at line 397.
+    Found 10-bit comparator greatequal for signal <RedOut_d$cmp_ge0020> created at line 403.
+    Found 10-bit comparator greatequal for signal <RedOut_d$cmp_ge0021> created at line 410.
+    Found 10-bit comparator greatequal for signal <RedOut_d$cmp_ge0022> created at line 416.
+    Found 10-bit comparator greatequal for signal <RedOut_d$cmp_ge0023> created at line 422.
+    Found 10-bit comparator greatequal for signal <RedOut_d$cmp_ge0024> created at line 428.
+    Found 10-bit comparator greatequal for signal <RedOut_d$cmp_ge0025> created at line 471.
+    Found 10-bit comparator greatequal for signal <RedOut_d$cmp_ge0026> created at line 477.
+    Found 10-bit comparator greatequal for signal <RedOut_d$cmp_ge0027> created at line 484.
+    Found 10-bit comparator greatequal for signal <RedOut_d$cmp_ge0028> created at line 490.
+    Found 10-bit comparator greatequal for signal <RedOut_d$cmp_ge0029> created at line 496.
+    Found 10-bit comparator greatequal for signal <RedOut_d$cmp_ge0030> created at line 502.
+    Found 10-bit comparator greatequal for signal <RedOut_d$cmp_ge0031> created at line 546.
+    Found 10-bit comparator greatequal for signal <RedOut_d$cmp_ge0032> created at line 552.
+    Found 10-bit comparator greatequal for signal <RedOut_d$cmp_ge0033> created at line 559.
+    Found 10-bit comparator greatequal for signal <RedOut_d$cmp_ge0034> created at line 565.
+    Found 10-bit comparator greatequal for signal <RedOut_d$cmp_ge0035> created at line 571.
+    Found 10-bit comparator greatequal for signal <RedOut_d$cmp_ge0036> created at line 577.
+    Found 10-bit comparator greatequal for signal <RedOut_d$cmp_ge0037> created at line 621.
+    Found 10-bit comparator greatequal for signal <RedOut_d$cmp_ge0038> created at line 627.
+    Found 10-bit comparator greatequal for signal <RedOut_d$cmp_ge0039> created at line 634.
+    Found 10-bit comparator greatequal for signal <RedOut_d$cmp_ge0040> created at line 640.
+    Found 10-bit comparator greatequal for signal <RedOut_d$cmp_ge0041> created at line 646.
+    Found 10-bit comparator greatequal for signal <RedOut_d$cmp_ge0042> created at line 705.
+    Found 10-bit comparator greatequal for signal <RedOut_d$cmp_ge0043> created at line 712.
+    Found 10-bit comparator greatequal for signal <RedOut_d$cmp_ge0044> created at line 718.
+    Found 10-bit comparator greatequal for signal <RedOut_d$cmp_ge0045> created at line 724.
+    Found 10-bit comparator greatequal for signal <RedOut_d$cmp_ge0046> created at line 730.
+    Found 10-bit comparator greatequal for signal <RedOut_d$cmp_ge0047> created at line 778.
+    Found 10-bit comparator greatequal for signal <RedOut_d$cmp_ge0048> created at line 784.
+    Found 10-bit comparator greatequal for signal <RedOut_d$cmp_ge0049> created at line 791.
+    Found 10-bit comparator greatequal for signal <RedOut_d$cmp_ge0050> created at line 797.
+    Found 10-bit comparator greatequal for signal <RedOut_d$cmp_ge0051> created at line 803.
+    Found 10-bit comparator greatequal for signal <RedOut_d$cmp_ge0052> created at line 809.
+    Found 10-bit comparator greatequal for signal <RedOut_d$cmp_ge0053> created at line 859.
+    Found 10-bit comparator greatequal for signal <RedOut_d$cmp_ge0054> created at line 865.
+    Found 10-bit comparator greatequal for signal <RedOut_d$cmp_ge0055> created at line 872.
+    Found 10-bit comparator greatequal for signal <RedOut_d$cmp_ge0056> created at line 878.
+    Found 10-bit comparator greatequal for signal <RedOut_d$cmp_ge0057> created at line 884.
+    Found 10-bit comparator greatequal for signal <RedOut_d$cmp_ge0058> created at line 890.
+    Found 10-bit comparator greatequal for signal <RedOut_d$cmp_ge0059> created at line 939.
+    Found 10-bit comparator greatequal for signal <RedOut_d$cmp_ge0060> created at line 945.
+    Found 10-bit comparator greatequal for signal <RedOut_d$cmp_ge0061> created at line 952.
+    Found 10-bit comparator greatequal for signal <RedOut_d$cmp_ge0062> created at line 958.
+    Found 10-bit comparator greatequal for signal <RedOut_d$cmp_ge0063> created at line 964.
+    Found 10-bit comparator greatequal for signal <RedOut_d$cmp_ge0064> created at line 970.
+    Found 10-bit comparator greatequal for signal <RedOut_d$cmp_ge0065> created at line 1018.
+    Found 10-bit comparator greatequal for signal <RedOut_d$cmp_ge0066> created at line 1024.
+    Found 10-bit comparator greatequal for signal <RedOut_d$cmp_ge0067> created at line 1031.
+    Found 10-bit comparator greatequal for signal <RedOut_d$cmp_ge0068> created at line 1037.
+    Found 10-bit comparator greatequal for signal <RedOut_d$cmp_ge0069> created at line 1043.
+    Found 10-bit comparator greatequal for signal <RedOut_d$cmp_ge0070> created at line 1049.
+    Found 10-bit comparator greatequal for signal <RedOut_d$cmp_ge0071> created at line 1090.
+    Found 10-bit comparator greatequal for signal <RedOut_d$cmp_ge0072> created at line 1108.
+    Found 10-bit comparator greatequal for signal <RedOut_d$cmp_ge0073> created at line 192.
+    Found 10-bit comparator greatequal for signal <RedOut_d$cmp_ge0074> created at line 192.
+    Found 10-bit comparator greatequal for signal <RedOut_d$cmp_ge0075> created at line 198.
+    Found 10-bit comparator greatequal for signal <RedOut_d$cmp_ge0076> created at line 251.
+    Found 10-bit comparator greatequal for signal <RedOut_d$cmp_ge0077> created at line 286.
+    Found 10-bit comparator less for signal <RedOut_d$cmp_lt0000> created at line 1217.
+    Found 10-bit comparator less for signal <RedOut_d$cmp_lt0001> created at line 1217.
+    Found 10-bit comparator less for signal <RedOut_d$cmp_lt0002> created at line 1223.
+    Found 10-bit comparator less for signal <RedOut_d$cmp_lt0003> created at line 318.
+    Found 10-bit comparator less for signal <RedOut_d$cmp_lt0004> created at line 318.
+    Found 10-bit comparator less for signal <RedOut_d$cmp_lt0005> created at line 324.
+    Found 10-bit comparator less for signal <RedOut_d$cmp_lt0006> created at line 330.
+    Found 10-bit comparator less for signal <RedOut_d$cmp_lt0007> created at line 330.
+    Found 10-bit comparator less for signal <RedOut_d$cmp_lt0008> created at line 337.
+    Found 10-bit comparator less for signal <RedOut_d$cmp_lt0009> created at line 343.
+    Found 10-bit comparator less for signal <RedOut_d$cmp_lt0010> created at line 349.
+    Found 10-bit comparator less for signal <RedOut_d$cmp_lt0011> created at line 355.
+    Found 10-bit comparator less for signal <RedOut_d$cmp_lt0012> created at line 355.
+    Found 10-bit comparator less for signal <RedOut_d$cmp_lt0013> created at line 361.
+    Found 10-bit comparator less for signal <RedOut_d$cmp_lt0014> created at line 361.
+    Found 10-bit comparator less for signal <RedOut_d$cmp_lt0015> created at line 367.
+    Found 10-bit comparator less for signal <RedOut_d$cmp_lt0016> created at line 367.
+    Found 10-bit comparator less for signal <RedOut_d$cmp_lt0017> created at line 373.
+    Found 10-bit comparator less for signal <RedOut_d$cmp_lt0018> created at line 391.
+    Found 10-bit comparator less for signal <RedOut_d$cmp_lt0019> created at line 397.
+    Found 10-bit comparator less for signal <RedOut_d$cmp_lt0020> created at line 410.
+    Found 10-bit comparator less for signal <RedOut_d$cmp_lt0021> created at line 422.
+    Found 10-bit comparator less for signal <RedOut_d$cmp_lt0022> created at line 428.
+    Found 10-bit comparator less for signal <RedOut_d$cmp_lt0023> created at line 465.
+    Found 10-bit comparator less for signal <RedOut_d$cmp_lt0024> created at line 471.
+    Found 10-bit comparator less for signal <RedOut_d$cmp_lt0025> created at line 484.
+    Found 10-bit comparator less for signal <RedOut_d$cmp_lt0026> created at line 496.
+    Found 10-bit comparator less for signal <RedOut_d$cmp_lt0027> created at line 502.
+    Found 10-bit comparator less for signal <RedOut_d$cmp_lt0028> created at line 540.
+    Found 10-bit comparator less for signal <RedOut_d$cmp_lt0029> created at line 546.
+    Found 10-bit comparator less for signal <RedOut_d$cmp_lt0030> created at line 559.
+    Found 10-bit comparator less for signal <RedOut_d$cmp_lt0031> created at line 571.
+    Found 10-bit comparator less for signal <RedOut_d$cmp_lt0032> created at line 577.
+    Found 10-bit comparator less for signal <RedOut_d$cmp_lt0033> created at line 615.
+    Found 10-bit comparator less for signal <RedOut_d$cmp_lt0034> created at line 621.
+    Found 10-bit comparator less for signal <RedOut_d$cmp_lt0035> created at line 634.
+    Found 10-bit comparator less for signal <RedOut_d$cmp_lt0036> created at line 646.
+    Found 10-bit comparator less for signal <RedOut_d$cmp_lt0037> created at line 652.
+    Found 10-bit comparator less for signal <RedOut_d$cmp_lt0038> created at line 699.
+    Found 10-bit comparator less for signal <RedOut_d$cmp_lt0039> created at line 712.
+    Found 10-bit comparator less for signal <RedOut_d$cmp_lt0040> created at line 724.
+    Found 10-bit comparator less for signal <RedOut_d$cmp_lt0041> created at line 730.
+    Found 10-bit comparator less for signal <RedOut_d$cmp_lt0042> created at line 772.
+    Found 10-bit comparator less for signal <RedOut_d$cmp_lt0043> created at line 778.
+    Found 10-bit comparator less for signal <RedOut_d$cmp_lt0044> created at line 791.
+    Found 10-bit comparator less for signal <RedOut_d$cmp_lt0045> created at line 803.
+    Found 10-bit comparator less for signal <RedOut_d$cmp_lt0046> created at line 809.
+    Found 10-bit comparator less for signal <RedOut_d$cmp_lt0047> created at line 859.
+    Found 10-bit comparator less for signal <RedOut_d$cmp_lt0048> created at line 872.
+    Found 10-bit comparator less for signal <RedOut_d$cmp_lt0049> created at line 884.
+    Found 10-bit comparator less for signal <RedOut_d$cmp_lt0050> created at line 890.
+    Found 10-bit comparator less for signal <RedOut_d$cmp_lt0051> created at line 933.
+    Found 10-bit comparator less for signal <RedOut_d$cmp_lt0052> created at line 939.
+    Found 10-bit comparator less for signal <RedOut_d$cmp_lt0053> created at line 952.
+    Found 10-bit comparator less for signal <RedOut_d$cmp_lt0054> created at line 964.
+    Found 10-bit comparator less for signal <RedOut_d$cmp_lt0055> created at line 970.
+    Found 10-bit comparator less for signal <RedOut_d$cmp_lt0056> created at line 1012.
+    Found 10-bit comparator less for signal <RedOut_d$cmp_lt0057> created at line 1018.
+    Found 10-bit comparator less for signal <RedOut_d$cmp_lt0058> created at line 1031.
+    Found 10-bit comparator less for signal <RedOut_d$cmp_lt0059> created at line 1043.
+    Found 10-bit comparator less for signal <RedOut_d$cmp_lt0060> created at line 1049.
+    Found 10-bit comparator less for signal <RedOut_d$cmp_lt0061> created at line 1102.
+    Found 10-bit comparator less for signal <RedOut_d$cmp_lt0062> created at line 1143.
+    Found 10-bit comparator less for signal <RedOut_d$cmp_lt0063> created at line 192.
+    Found 10-bit comparator less for signal <RedOut_d$cmp_lt0064> created at line 198.
+    Found 10-bit comparator less for signal <RedOut_d$cmp_lt0065> created at line 286.
+    Found 10-bit comparator less for signal <RedOut_d$cmp_lt0066> created at line 292.
+    Found 10-bit comparator less for signal <RedOut_d$cmp_lt0067> created at line 292.
+    Found 3-bit register for signal <RedOut_q>.
+    Found 10-bit adder for signal <VCounter_d$addsub0000> created at line 141.
+    Found 10-bit comparator less for signal <VCounter_d$cmp_lt0000> created at line 137.
+    Found 10-bit register for signal <VCounter_q>.
+    Found 10-bit comparator less for signal <VSync_d$cmp_lt0000> created at line 153.
+    Found 1-bit register for signal <VSync_q>.
+    Summary:
+	inferred  30 D-type flip-flop(s).
+	inferred   2 Adder/Subtractor(s).
+	inferred 150 Comparator(s).
+	inferred   8 Multiplexer(s).
+Unit <VGA640x480> synthesized.
+
+
+Synthesizing Unit <ClkDivider>.
+    Related source file is "mFrecuencia_vga.v".
+    Found 1-bit register for signal <Clk25_q>.
+    Summary:
+	inferred   1 D-type flip-flop(s).
+Unit <ClkDivider> synthesized.
+
+
+Synthesizing Unit <mDivisor_1Hz>.
+    Related source file is "mDivisor_1Hz.v".
+    Found 24-bit adder for signal <rvCount_D$addsub0000> created at line 64.
+    Found 24-bit comparator less for signal <rvCount_D$cmp_lt0000> created at line 62.
+    Found 24-bit register for signal <rvCount_Q>.
+    Found 1-bit register for signal <rvFF_Q>.
+    Summary:
+	inferred  25 D-type flip-flop(s).
+	inferred   1 Adder/Subtractor(s).
+	inferred   1 Comparator(s).
+Unit <mDivisor_1Hz> synthesized.
+
+
+Synthesizing Unit <mPerdedor>.
+    Related source file is "mPerdedor.v".
+    Found 1-bit register for signal <rSt_Q>.
+    Found 2-bit adder for signal <rvCount_D$addsub0000> created at line 67.
+    Found 2-bit register for signal <rvCount_Q>.
+    Summary:
+	inferred   3 D-type flip-flop(s).
+	inferred   1 Adder/Subtractor(s).
+Unit <mPerdedor> synthesized.
+
+
+Synthesizing Unit <top>.
+    Related source file is "top.v".
+Unit <top> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# ROMs                                                 : 4
+ 16x7-bit ROM                                          : 4
+# Multipliers                                          : 7
+ 10x2-bit multiplier                                   : 1
+ 10x3-bit multiplier                                   : 3
+ 10x4-bit multiplier                                   : 2
+ 4x4-bit multiplier                                    : 1
+# Adders/Subtractors                                   : 13
+ 10-bit adder                                          : 2
+ 14-bit adder                                          : 1
+ 2-bit adder                                           : 2
+ 24-bit adder                                          : 2
+ 27-bit adder                                          : 1
+ 4-bit adder                                           : 4
+ 8-bit adder                                           : 1
+# Counters                                             : 2
+ 4-bit up counter                                      : 2
+# Registers                                            : 53
+ 1-bit register                                        : 14
+ 10-bit register                                       : 3
+ 14-bit register                                       : 1
+ 15-bit register                                       : 5
+ 2-bit register                                        : 3
+ 24-bit register                                       : 2
+ 27-bit register                                       : 1
+ 3-bit register                                        : 3
+ 30-bit register                                       : 1
+ 4-bit register                                        : 13
+ 7-bit register                                        : 5
+ 8-bit register                                        : 1
+ 9-bit register                                        : 1
+# Comparators                                          : 165
+ 10-bit comparator greatequal                          : 78
+ 10-bit comparator less                                : 72
+ 14-bit comparator less                                : 2
+ 14-bit comparator lessequal                           : 8
+ 24-bit comparator less                                : 1
+ 4-bit comparator greater                              : 4
+# Multiplexers                                         : 7
+ 2-bit 4-to-1 multiplexer                              : 1
+ 3-bit 4-to-1 multiplexer                              : 2
+ 4-bit 4-to-1 multiplexer                              : 4
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Analyzing FSM <FSM_0> for best encoding.
+Optimizing FSM <Machine/rvState_Machine_Q/FSM> on signal <rvState_Machine_Q[1:2]> with gray encoding.
+-------------------
+ State | Encoding
+-------------------
+ 00    | 00
+ 01    | 01
+ 10    | 11
+ 11    | 10
+-------------------
+INFO:Xst:2261 - The FF/Latch <rv_Flujo_Q_0> in Unit <Flujo> is equivalent to the following FF/Latch, which will be removed : <rv_Flujo_Q_1> 
+WARNING:Xst:1293 - FF/Latch <rvQ_0> has a constant value of 0 in block <Corrimiento>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <rvQ_1> has a constant value of 0 in block <Corrimiento>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <rv_Flujo_Q_0> has a constant value of 0 in block <Flujo>. This FF/Latch will be trimmed during the optimization process.
+
+Synthesizing (advanced) Unit <mBCD>.
+INFO:Xst:3034 - In order to maximize performance and save block RAM resources, the small ROM <Mrom_rvFF_7seg> will be implemented on LUT. If you want to force its implementation on block, use option/constraint rom_style.
+Unit <mBCD> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# FSMs                                                 : 1
+# ROMs                                                 : 4
+ 16x7-bit ROM                                          : 4
+# Multipliers                                          : 7
+ 10x2-bit multiplier                                   : 1
+ 10x3-bit multiplier                                   : 3
+ 10x4-bit multiplier                                   : 2
+ 4x4-bit multiplier                                    : 1
+# Adders/Subtractors                                   : 13
+ 10-bit adder                                          : 2
+ 14-bit adder                                          : 1
+ 2-bit adder                                           : 2
+ 24-bit adder                                          : 2
+ 27-bit adder                                          : 1
+ 4-bit adder                                           : 4
+ 8-bit adder                                           : 1
+# Counters                                             : 2
+ 4-bit up counter                                      : 2
+# Registers                                            : 357
+ Flip-Flops                                            : 357
+# Comparators                                          : 165
+ 10-bit comparator greatequal                          : 78
+ 10-bit comparator less                                : 72
+ 14-bit comparator less                                : 2
+ 14-bit comparator lessequal                           : 8
+ 24-bit comparator less                                : 1
+ 4-bit comparator greater                              : 4
+# Multiplexers                                         : 12
+ 1-bit 4-to-1 multiplexer                              : 8
+ 4-bit 4-to-1 multiplexer                              : 4
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1293 - FF/Latch <rv_Flujo_Q_0> has a constant value of 0 in block <Algoritmo_Datos_ADC>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <rv_Flujo_Q_1> has a constant value of 0 in block <Algoritmo_Datos_ADC>. This FF/Latch will be trimmed during the optimization process.
+
+Optimizing unit <top> ...
+
+Optimizing unit <mDebouncer1> ...
+
+Optimizing unit <corrimiento_suma> ...
+
+Optimizing unit <Algoritmo_Datos_ADC> ...
+
+Optimizing unit <Display_states> ...
+
+Optimizing unit <mMux> ...
+
+Optimizing unit <mDivisor> ...
+
+Optimizing unit <mOH> ...
+
+Optimizing unit <mBCD> ...
+
+Optimizing unit <State_2> ...
+
+Optimizing unit <divisor> ...
+
+Optimizing unit <Suma_flujo> ...
+
+Optimizing unit <Algoritmo_CVP> ...
+
+Optimizing unit <CVP> ...
+
+Optimizing unit <Comp> ...
+
+Optimizing unit <VGA640x480> ...
+
+Optimizing unit <mDivisor_1Hz> ...
+
+Optimizing unit <mPerdedor> ...
+WARNING:Xst:1293 - FF/Latch <Corrimiento/rvQ_1> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Corrimiento/rvQ_0> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block top, actual ratio is 66.
+FlipFlop VGA/HCounter_q_1 has been replicated 1 time(s)
+FlipFlop VGA/HCounter_q_2 has been replicated 1 time(s)
+FlipFlop VGA/HCounter_q_3 has been replicated 1 time(s)
+FlipFlop VGA/HCounter_q_4 has been replicated 1 time(s)
+FlipFlop VGA/HCounter_q_6 has been replicated 1 time(s)
+FlipFlop VGA/HCounter_q_7 has been replicated 2 time(s)
+FlipFlop VGA/HCounter_q_8 has been replicated 1 time(s)
+FlipFlop VGA/HCounter_q_9 has been replicated 1 time(s)
+FlipFlop VGA/VCounter_q_4 has been replicated 1 time(s)
+FlipFlop VGA/VCounter_q_5 has been replicated 1 time(s)
+FlipFlop VGA/VCounter_q_6 has been replicated 1 time(s)
+FlipFlop VGA/VCounter_q_7 has been replicated 1 time(s)
+FlipFlop VGA/VCounter_q_8 has been replicated 1 time(s)
+FlipFlop VGA/VCounter_q_9 has been replicated 1 time(s)
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 378
+ Flip-Flops                                            : 378
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : top.ngr
+Top Level Output File Name         : top
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 37
+
+Cell Usage :
+# BELS                             : 1679
+#      GND                         : 1
+#      INV                         : 25
+#      LUT1                        : 101
+#      LUT2                        : 263
+#      LUT2_D                      : 16
+#      LUT2_L                      : 9
+#      LUT3                        : 137
+#      LUT3_D                      : 23
+#      LUT3_L                      : 17
+#      LUT4                        : 462
+#      LUT4_D                      : 82
+#      LUT4_L                      : 72
+#      MUXCY                       : 286
+#      MUXF5                       : 38
+#      VCC                         : 1
+#      XORCY                       : 146
+# FlipFlops/Latches                : 378
+#      FD                          : 1
+#      FDC                         : 1
+#      FDCE                        : 45
+#      FDE                         : 31
+#      FDR                         : 131
+#      FDRE                        : 145
+#      FDRS                        : 20
+#      FDSE                        : 4
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 36
+#      IBUF                        : 12
+#      OBUF                        : 24
+# MULTs                            : 4
+#      MULT18X18SIO                : 4
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s100ecp132-4 
+
+ Number of Slices:                      634  out of    960    66%  
+ Number of Slice Flip Flops:            378  out of   1920    19%  
+ Number of 4 input LUTs:               1207  out of   1920    62%  
+ Number of IOs:                          37
+ Number of bonded IOBs:                  37  out of     83    44%  
+ Number of MULT18X18SIOs:                 4  out of      4   100%  
+ Number of GCLKs:                         1  out of     24     4%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+iClk                               | BUFGP                  | 378   |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+----------------------------------------------+--------------------------+-------+
+Control Signal                                | Buffer(FF name)          | Load  |
+----------------------------------------------+--------------------------+-------+
+Reset_debouncer/rff_Q(Reset_debouncer/rff_Q:Q)| NONE(Divisor_VGA/Clk25_q)| 46    |
+----------------------------------------------+--------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: 12.573ns (Maximum Frequency: 79.536MHz)
+   Minimum input arrival time before clock: 5.944ns
+   Maximum output required time after clock: 5.695ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'iClk'
+  Clock period: 12.573ns (frequency: 79.536MHz)
+  Total number of paths / destination ports: 47232 / 721
+-------------------------------------------------------------------------
+Delay:               12.573ns (Levels of Logic = 9)
+  Source:            VGA/VCounter_q_3 (FF)
+  Destination:       VGA/RedOut_q_2 (FF)
+  Source Clock:      iClk rising
+  Destination Clock: iClk rising
+
+  Data Path: VGA/VCounter_q_3 to VGA/RedOut_q_2
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q            14   0.591   1.004  VGA/VCounter_q_3 (VGA/VCounter_q_3)
+     LUT4:I3->O            1   0.704   0.424  VGA/RedOut_d_cmp_ge001126 (VGA/RedOut_d_cmp_ge001126)
+     LUT4_D:I3->O          9   0.704   0.995  VGA/RedOut_d_cmp_ge0011220 (VGA/RedOut_d_cmp_ge0011)
+     LUT2_D:I0->O          1   0.704   0.424  VGA/RedOut_d_and000711 (VGA/N45)
+     LUT4_D:I3->O          3   0.704   0.706  VGA/RedOut_d_and0059 (VGA/RedOut_d_and0059)
+     LUT3:I0->O            1   0.704   0.424  VGA/RedOut_d_mux0001<2>1911 (VGA/RedOut_d_mux0001<2>191)
+     LUT4:I3->O            1   0.704   0.424  VGA/RedOut_d_mux0001<2>203 (VGA/RedOut_d_mux0001<2>203)
+     LUT4:I3->O            1   0.704   0.455  VGA/RedOut_d_mux0001<2>209 (VGA/RedOut_d_mux0001<2>209)
+     LUT4_D:I2->O          2   0.704   0.482  VGA/RedOut_d_mux0001<2>273 (VGA/RedOut_d_mux0001<2>)
+     LUT3:I2->O            1   0.704   0.000  VGA/mux2_2_f51 (VGA/RedOut_d<2>)
+     FDCE:D                    0.308          VGA/RedOut_q_2
+    ----------------------------------------
+    Total                     12.573ns (7.235ns logic, 5.338ns route)
+                                       (57.5% logic, 42.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'iClk'
+  Total number of paths / destination ports: 116 / 32
+-------------------------------------------------------------------------
+Offset:              5.944ns (Levels of Logic = 17)
+  Source:            ivDatos<0> (PAD)
+  Destination:       Sum_fluj/rv_Suma_Q_13 (FF)
+  Destination Clock: iClk rising
+
+  Data Path: ivDatos<0> to Sum_fluj/rv_Suma_Q_13
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             3   1.218   0.610  ivDatos_0_IBUF (ivDatos_0_IBUF)
+     LUT2:I1->O            1   0.704   0.000  Sum_fluj/Madd_rv_Suma_D_addsub0000_lut<0> (Sum_fluj/Madd_rv_Suma_D_addsub0000_lut<0>)
+     MUXCY:S->O            1   0.464   0.000  Sum_fluj/Madd_rv_Suma_D_addsub0000_cy<0> (Sum_fluj/Madd_rv_Suma_D_addsub0000_cy<0>)
+     MUXCY:CI->O           1   0.059   0.000  Sum_fluj/Madd_rv_Suma_D_addsub0000_cy<1> (Sum_fluj/Madd_rv_Suma_D_addsub0000_cy<1>)
+     MUXCY:CI->O           1   0.059   0.000  Sum_fluj/Madd_rv_Suma_D_addsub0000_cy<2> (Sum_fluj/Madd_rv_Suma_D_addsub0000_cy<2>)
+     MUXCY:CI->O           1   0.059   0.000  Sum_fluj/Madd_rv_Suma_D_addsub0000_cy<3> (Sum_fluj/Madd_rv_Suma_D_addsub0000_cy<3>)
+     MUXCY:CI->O           1   0.059   0.000  Sum_fluj/Madd_rv_Suma_D_addsub0000_cy<4> (Sum_fluj/Madd_rv_Suma_D_addsub0000_cy<4>)
+     MUXCY:CI->O           1   0.059   0.000  Sum_fluj/Madd_rv_Suma_D_addsub0000_cy<5> (Sum_fluj/Madd_rv_Suma_D_addsub0000_cy<5>)
+     MUXCY:CI->O           1   0.059   0.000  Sum_fluj/Madd_rv_Suma_D_addsub0000_cy<6> (Sum_fluj/Madd_rv_Suma_D_addsub0000_cy<6>)
+     MUXCY:CI->O           1   0.059   0.000  Sum_fluj/Madd_rv_Suma_D_addsub0000_cy<7> (Sum_fluj/Madd_rv_Suma_D_addsub0000_cy<7>)
+     MUXCY:CI->O           1   0.059   0.000  Sum_fluj/Madd_rv_Suma_D_addsub0000_cy<8> (Sum_fluj/Madd_rv_Suma_D_addsub0000_cy<8>)
+     MUXCY:CI->O           1   0.059   0.000  Sum_fluj/Madd_rv_Suma_D_addsub0000_cy<9> (Sum_fluj/Madd_rv_Suma_D_addsub0000_cy<9>)
+     MUXCY:CI->O           1   0.059   0.000  Sum_fluj/Madd_rv_Suma_D_addsub0000_cy<10> (Sum_fluj/Madd_rv_Suma_D_addsub0000_cy<10>)
+     MUXCY:CI->O           1   0.059   0.000  Sum_fluj/Madd_rv_Suma_D_addsub0000_cy<11> (Sum_fluj/Madd_rv_Suma_D_addsub0000_cy<11>)
+     MUXCY:CI->O           0   0.059   0.000  Sum_fluj/Madd_rv_Suma_D_addsub0000_cy<12> (Sum_fluj/Madd_rv_Suma_D_addsub0000_cy<12>)
+     XORCY:CI->O           1   0.804   0.424  Sum_fluj/Madd_rv_Suma_D_addsub0000_xor<13> (Sum_fluj/rv_Suma_D_addsub0000<13>)
+     LUT4:I3->O            1   0.704   0.000  Sum_fluj/rv_Suma_D<13>1 (Sum_fluj/rv_Suma_D<13>)
+     FDRE:D                    0.308          Sum_fluj/rv_Suma_Q_13
+    ----------------------------------------
+    Total                      5.944ns (4.910ns logic, 1.034ns route)
+                                       (82.6% logic, 17.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'iClk'
+  Total number of paths / destination ports: 24 / 24
+-------------------------------------------------------------------------
+Offset:              5.695ns (Levels of Logic = 2)
+  Source:            Anodes/rvff_Q_2 (FF)
+  Destination:       ovAnode<2> (PAD)
+  Source Clock:      iClk rising
+
+  Data Path: Anodes/rvff_Q_2 to ovAnode<2>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDRE:C->Q             7   0.591   0.708  Anodes/rvff_Q_2 (Anodes/rvff_Q_2)
+     INV:I->O              1   0.704   0.420  ovAnode<2>1_INV_0 (ovAnode_2_OBUF)
+     OBUF:I->O                 3.272          ovAnode_2_OBUF (ovAnode<2>)
+    ----------------------------------------
+    Total                      5.695ns (4.567ns logic, 1.128ns route)
+                                       (80.2% logic, 19.8% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 13.00 secs
+Total CPU time to Xst completion: 12.19 secs
+ 
+--> 
+
+Total memory usage is 342184 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   10 (   0 filtered)
+Number of infos    :    2 (   0 filtered)
+

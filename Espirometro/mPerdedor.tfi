@@ -1,0 +1,13 @@
+
+
+
+// Instantiate the module
+mPerdedor instance_name (
+    .iClk(iClk), 
+    .iReset(iReset), 
+    .iCe(iCe), 
+    .ivFlujo(ivFlujo), 
+    .oState(oState)
+    );
+
+

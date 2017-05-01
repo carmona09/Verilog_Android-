@@ -1,0 +1,4 @@
+xst -intstyle ise -ifn "C:/.Xilinx/Espirometro/Suma_flujo.xst" -ofn "C:/.Xilinx/Espirometro/Suma_flujo.syr" 
+vhdtdtfi -lang verilog -prj Espirometro -o C:/.Xilinx/Espirometro/Suma_flujo.tfi -lib work C:/.Xilinx/Espirometro//Suma_flujo.v -module Suma_flujo -template C:/Xilinx/14.7/ISE_DS/ISE//data/tfi.tft -deleteonerror 
+xst -intstyle ise -ifn "C:/Users/Alumnos/Desktop/Espirometro/Suma_flujo.xst" -ofn "C:/Users/Alumnos/Desktop/Espirometro/Suma_flujo.syr" 
+xst -intstyle ise -ifn "C:/Users/Alumnos/Desktop/Espirometro/Suma_flujo.xst" -ofn "C:/Users/Alumnos/Desktop/Espirometro/Suma_flujo.syr" 

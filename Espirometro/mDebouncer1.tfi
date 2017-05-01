@@ -1,0 +1,13 @@
+
+
+
+// Instantiate the module
+mDebouncer1 instance_name (
+    .iclk(iclk), 
+    .iD(iD), 
+    .iReset(iReset), 
+    .iCle(iCle), 
+    .oQ(oQ)
+    );
+
+

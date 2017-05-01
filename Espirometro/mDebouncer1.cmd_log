@@ -1,0 +1,1 @@
+vhdtdtfi -lang verilog -prj Espirometro -o C:/.Xilinx/Espirometro/mDebouncer1.tfi -lib work C:/.Xilinx/Espirometro//mdebouncer1.v -module mDebouncer1 -template C:/Xilinx/14.7/ISE_DS/ISE//data/tfi.tft -deleteonerror 

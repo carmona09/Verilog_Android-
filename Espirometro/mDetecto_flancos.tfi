@@ -1,0 +1,13 @@
+
+
+
+// Instantiate the module
+mDetecto_flancos instance_name (
+    .iclk(iclk), 
+    .icle(icle), 
+    .iboton(iboton), 
+    .ireset(ireset), 
+    .osalida(osalida)
+    );
+
+

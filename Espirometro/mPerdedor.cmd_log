@@ -1,0 +1,4 @@
+xst -intstyle ise -ifn "C:/Users/Alumnos/Desktop/Espirometro/mPerdedor.xst" -ofn "C:/Users/Alumnos/Desktop/Espirometro/mPerdedor.syr" 
+xst -intstyle ise -ifn "C:/Users/Alumnos/Desktop/Espirometro/mPerdedor.xst" -ofn "C:/Users/Alumnos/Desktop/Espirometro/mPerdedor.syr" 
+xst -intstyle ise -ifn "C:/Users/Alumnos/Desktop/Espirometro/mPerdedor.xst" -ofn "C:/Users/Alumnos/Desktop/Espirometro/mPerdedor.syr" 
+vhdtdtfi -lang verilog -prj Espirometro -o C:/Users/Alumnos/Desktop/Espirometro/mPerdedor.tfi -lib work C:/Users/Alumnos/Desktop/Espirometro//mPerdedor.v -module mPerdedor -template C:/Xilinx/14.7/ISE_DS/ISE//data/tfi.tft -deleteonerror 

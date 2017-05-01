@@ -1,0 +1,13 @@
+
+
+
+// Instantiate the module
+State_2 instance_name (
+    .iClk(iClk), 
+    .iCE(iCE), 
+    .iReset(iReset), 
+    .ivStateMachine(ivStateMachine), 
+    .ovLED(ovLED)
+    );
+
+

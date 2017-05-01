@@ -1,0 +1,5 @@
+xst -intstyle ise -ifn "C:/.Xilinx/Espirometro/StateMachine.xst" -ofn "C:/.Xilinx/Espirometro/StateMachine.syr" 
+xst -intstyle ise -ifn "C:/.Xilinx/Espirometro/StateMachine.xst" -ofn "C:/.Xilinx/Espirometro/StateMachine.syr" 
+xst -intstyle ise -ifn "C:/.Xilinx/Espirometro/StateMachine.xst" -ofn "C:/.Xilinx/Espirometro/StateMachine.syr" 
+xst -intstyle ise -ifn "C:/.Xilinx/Espirometro/StateMachine.xst" -ofn "C:/.Xilinx/Espirometro/StateMachine.syr" 
+vhdtdtfi -lang verilog -prj Espirometro -o C:/.Xilinx/Espirometro/StateMachine.tfi -lib work C:/.Xilinx/Espirometro//StateMachine.v -module StateMachine -template C:/Xilinx/14.7/ISE_DS/ISE//data/tfi.tft -deleteonerror 

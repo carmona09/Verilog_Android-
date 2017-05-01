@@ -1,0 +1,14 @@
+
+
+
+// Instantiate the module
+Algoritmo_CVP instance_name (
+    .ivCounter1(ivCounter1), 
+    .ivCounter2(ivCounter2), 
+    .iReset(iReset), 
+    .iCle(iCle), 
+    .iClk(iClk), 
+    .ovSuma_Total(ovSuma_Total)
+    );
+
+

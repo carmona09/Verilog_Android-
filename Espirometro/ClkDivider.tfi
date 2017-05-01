@@ -1,0 +1,11 @@
+
+
+
+// Instantiate the module
+ClkDivider instance_name (
+    .Clk(Clk), 
+    .Rst(Rst), 
+    .Clk25(Clk25)
+    );
+
+

@@ -1,0 +1,18 @@
+
+
+
+// Instantiate the module
+VGA640x480 instance_name (
+    .Clk(Clk), 
+    .ClkEnable(ClkEnable), 
+    .Rst(Rst), 
+    .ivState(ivState), 
+    .iS(iS), 
+    .HSync(HSync), 
+    .VSync(VSync), 
+    .RedOut(RedOut), 
+    .GreenOut(GreenOut), 
+    .BlueOut(BlueOut)
+    );
+
+

@@ -1,0 +1,45 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Fri Apr 07 13:04:09 2017
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "iClk" LOCATE = SITE "B8" LEVEL 1;
+COMP "blue<0>" LOCATE = SITE "H13" LEVEL 1;
+COMP "blue<1>" LOCATE = SITE "J13" LEVEL 1;
+COMP "hsync" LOCATE = SITE "J14" LEVEL 1;
+COMP "vsync" LOCATE = SITE "K13" LEVEL 1;
+COMP "ivDatos<0>" LOCATE = SITE "B7" LEVEL 1;
+COMP "ivDatos<1>" LOCATE = SITE "C5" LEVEL 1;
+COMP "ivDatos<2>" LOCATE = SITE "B6" LEVEL 1;
+COMP "ivDatos<3>" LOCATE = SITE "C6" LEVEL 1;
+COMP "ivDatos<4>" LOCATE = SITE "B5" LEVEL 1;
+COMP "ivDatos<5>" LOCATE = SITE "J3" LEVEL 1;
+COMP "ivDatos<6>" LOCATE = SITE "A3" LEVEL 1;
+COMP "ivDatos<7>" LOCATE = SITE "B2" LEVEL 1;
+COMP "iBotonCount1" LOCATE = SITE "G12" LEVEL 1;
+COMP "iBotonCount2" LOCATE = SITE "C11" LEVEL 1;
+COMP "iBoton" LOCATE = SITE "M4" LEVEL 1;
+COMP "ovLED<0>" LOCATE = SITE "M5" LEVEL 1;
+COMP "ovLED<1>" LOCATE = SITE "M11" LEVEL 1;
+COMP "ovLED<2>" LOCATE = SITE "P7" LEVEL 1;
+COMP "iReset" LOCATE = SITE "A7" LEVEL 1;
+COMP "red<0>" LOCATE = SITE "C14" LEVEL 1;
+COMP "red<1>" LOCATE = SITE "D13" LEVEL 1;
+COMP "red<2>" LOCATE = SITE "F13" LEVEL 1;
+COMP "green<0>" LOCATE = SITE "F14" LEVEL 1;
+COMP "green<1>" LOCATE = SITE "G13" LEVEL 1;
+COMP "green<2>" LOCATE = SITE "G14" LEVEL 1;
+COMP "ovDisplay<0>" LOCATE = SITE "M12" LEVEL 1;
+COMP "ovDisplay<1>" LOCATE = SITE "L13" LEVEL 1;
+COMP "ovDisplay<2>" LOCATE = SITE "P12" LEVEL 1;
+COMP "ovDisplay<3>" LOCATE = SITE "N11" LEVEL 1;
+COMP "ovDisplay<4>" LOCATE = SITE "N14" LEVEL 1;
+COMP "ovDisplay<5>" LOCATE = SITE "H12" LEVEL 1;
+COMP "ovDisplay<6>" LOCATE = SITE "L14" LEVEL 1;
+COMP "ovAnode<0>" LOCATE = SITE "F12" LEVEL 1;
+COMP "ovAnode<1>" LOCATE = SITE "J12" LEVEL 1;
+COMP "ovAnode<2>" LOCATE = SITE "M13" LEVEL 1;
+COMP "ovAnode<3>" LOCATE = SITE "K14" LEVEL 1;
+NET "iClk_BUFGP/IBUFG" BEL "iClk_BUFGP/BUFG.GCLKMUX" USELOCALCONNECT;
+SCHEMATIC END;
+

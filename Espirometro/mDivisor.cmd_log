@@ -1,0 +1,1 @@
+vhdtdtfi -lang verilog -prj Espirometro -o C:/.Xilinx/Espirometro/mDivisor.tfi -lib work C:/.Xilinx/Espirometro//mDivisor.v -module mDivisor -template C:/Xilinx/14.7/ISE_DS/ISE//data/tfi.tft -deleteonerror 

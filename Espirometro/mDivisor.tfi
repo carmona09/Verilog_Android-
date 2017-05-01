@@ -1,0 +1,12 @@
+
+
+
+// Instantiate the module
+mDivisor instance_name (
+    .iClk(iClk), 
+    .iReset(iReset), 
+    .iCle(iCle), 
+    .oClkModified(oClkModified)
+    );
+
+

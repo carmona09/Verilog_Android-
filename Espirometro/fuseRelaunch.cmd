@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -o "C:/Users/Alumnos/Desktop/Espirometro/tb_suma_isim_beh.exe" -prj "C:/Users/Alumnos/Desktop/Espirometro/tb_suma_beh.prj" "work.tb_suma" "work.glbl" 

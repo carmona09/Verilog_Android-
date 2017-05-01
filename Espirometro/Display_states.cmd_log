@@ -1,0 +1,5 @@
+xst -intstyle ise -ifn "C:/.Xilinx/Espirometro/Display_states.xst" -ofn "C:/.Xilinx/Espirometro/Display_states.syr" 
+xst -intstyle ise -ifn "C:/.Xilinx/Espirometro/Display_states.xst" -ofn "C:/.Xilinx/Espirometro/Display_states.syr" 
+xst -intstyle ise -ifn "C:/.Xilinx/Espirometro/Display_states.xst" -ofn "C:/.Xilinx/Espirometro/Display_states.syr" 
+xst -intstyle ise -ifn "C:/.Xilinx/Espirometro/Display_states.xst" -ofn "C:/.Xilinx/Espirometro/Display_states.syr" 
+vhdtdtfi -lang verilog -prj Espirometro -o C:/.Xilinx/Espirometro/Display_states.tfi -lib work C:/.Xilinx/Espirometro//Display_states.v -module Display_states -template C:/Xilinx/14.7/ISE_DS/ISE//data/tfi.tft -deleteonerror 

@@ -1,0 +1,12 @@
+
+
+
+// Instantiate the module
+mDivisor_1Hz instance_name (
+    .iClk(iClk), 
+    .iReset(iReset), 
+    .iCe(iCe), 
+    .oClk_1Hz(oClk_1Hz)
+    );
+
+

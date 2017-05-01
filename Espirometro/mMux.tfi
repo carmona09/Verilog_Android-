@@ -1,0 +1,17 @@
+
+
+
+// Instantiate the module
+mMux instance_name (
+    .iclk(iclk), 
+    .icle(icle), 
+    .ireset(ireset), 
+    .ioh(ioh), 
+    .counter1(counter1), 
+    .counter2(counter2), 
+    .counter3(counter3), 
+    .counter4(counter4), 
+    .ov7seg(ov7seg)
+    );
+
+

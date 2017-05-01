@@ -1,0 +1,1 @@
+vhdtdtfi -lang verilog -prj Espirometro -o C:/.Xilinx/Espirometro/mDetecto_flancos.tfi -lib work C:/.Xilinx/Espirometro//mDetecto_flancos.v -module mDetecto_flancos -template C:/Xilinx/14.7/ISE_DS/ISE//data/tfi.tft -deleteonerror 

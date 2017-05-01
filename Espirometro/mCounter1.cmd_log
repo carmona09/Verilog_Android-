@@ -1,0 +1,1 @@
+vhdtdtfi -lang verilog -prj Espirometro -o C:/.Xilinx/Espirometro/mCounter1.tfi -lib work C:/.Xilinx/Espirometro//contador1.v -module mCounter1 -template C:/Xilinx/14.7/ISE_DS/ISE//data/tfi.tft -deleteonerror 

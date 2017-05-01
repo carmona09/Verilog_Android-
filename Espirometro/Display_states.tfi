@@ -1,0 +1,22 @@
+
+
+
+// Instantiate the module
+Display_states instance_name (
+    .iReset(iReset), 
+    .iCE(iCE), 
+    .iClk(iClk), 
+    .ivStateMachine(ivStateMachine), 
+    .ivCount1(ivCount1), 
+    .ivCount2(ivCount2), 
+    .ivCount_Flujo1(ivCount_Flujo1), 
+    .ivCount_Flujo2(ivCount_Flujo2), 
+    .ivCount_Flujo3(ivCount_Flujo3), 
+    .ivCount_Flujo4(ivCount_Flujo4), 
+    .ovDisplay1(ovDisplay1), 
+    .ovDisplay2(ovDisplay2), 
+    .ovDisplay3(ovDisplay3), 
+    .ovDisplay4(ovDisplay4)
+    );
+
+

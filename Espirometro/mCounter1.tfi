@@ -1,0 +1,12 @@
+
+
+
+// Instantiate the module
+mCounter1 instance_name (
+    .iclk(iclk), 
+    .iCle(iCle), 
+    .iReset(iReset), 
+    .ovCounter(ovCounter)
+    );
+
+

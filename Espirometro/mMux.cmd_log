@@ -1,0 +1,2 @@
+vhdtdtfi -lang verilog -prj Espirometro -o C:/.Xilinx/Espirometro/mMux.tfi -lib work C:/.Xilinx/Espirometro//mMux.v -module mMux -template C:/Xilinx/14.7/ISE_DS/ISE//data/tfi.tft -deleteonerror 
+xst -intstyle ise -ifn "C:/.Xilinx/Espirometro/mMux.xst" -ofn "C:/.Xilinx/Espirometro/mMux.syr" 

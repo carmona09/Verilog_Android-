@@ -1,0 +1,13 @@
+
+
+
+// Instantiate the module
+mBCD instance_name (
+    .iclk(iclk), 
+    .iCle(iCle), 
+    .iReset(iReset), 
+    .iCount(iCount), 
+    .ov7segmentos(ov7segmentos)
+    );
+
+

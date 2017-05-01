@@ -1,0 +1,2 @@
+xst -intstyle ise -ifn "C:/Users/Alumnos/Espirometro/Algoritmo_CVP.xst" -ofn "C:/Users/Alumnos/Espirometro/Algoritmo_CVP.syr" 
+vhdtdtfi -lang verilog -prj Espirometro -o C:/.Xilinx/Espirometro/Algoritmo_CVP.tfi -lib work C:/.Xilinx/Espirometro//Algoritmo_CVP.v -module Algoritmo_CVP -template C:/Xilinx/14.7/ISE_DS/ISE//data/tfi.tft -deleteonerror 

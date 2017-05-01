@@ -1,0 +1,5 @@
+xst -intstyle ise -ifn "C:/.Xilinx/Espirometro/divisor.xst" -ofn "C:/.Xilinx/Espirometro/divisor.syr" 
+xst -intstyle ise -ifn "C:/.Xilinx/Espirometro/divisor.xst" -ofn "C:/.Xilinx/Espirometro/divisor.syr" 
+xst -intstyle ise -ifn "C:/.Xilinx/Espirometro/divisor.xst" -ofn "C:/.Xilinx/Espirometro/divisor.syr" 
+vhdtdtfi -lang verilog -prj Espirometro -o C:/.Xilinx/Espirometro/divisor.tfi -lib work C:/.Xilinx/Espirometro//divisor.v -module divisor -template C:/Xilinx/14.7/ISE_DS/ISE//data/tfi.tft -deleteonerror 
+xst -intstyle ise -ifn "C:/Users/Alumnos/Desktop/Espirometro/divisor.xst" -ofn "C:/Users/Alumnos/Desktop/Espirometro/divisor.syr" 

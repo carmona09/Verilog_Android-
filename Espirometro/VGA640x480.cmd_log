@@ -1,0 +1,2 @@
+xst -intstyle ise -ifn "C:/Users/Alumnos/Espirometro/VGA640x480.xst" -ofn "C:/Users/Alumnos/Espirometro/VGA640x480.syr" 
+vhdtdtfi -lang verilog -prj Espirometro -o C:/Users/Alumnos/Desktop/Espirometro/VGA640x480.tfi -lib work C:/Users/Alumnos/Desktop/Espirometro//dfgfdg.v -module VGA640x480 -template C:/Xilinx/14.7/ISE_DS/ISE//data/tfi.tft -deleteonerror 

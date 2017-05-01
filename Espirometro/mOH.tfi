@@ -1,0 +1,12 @@
+
+
+
+// Instantiate the module
+mOH instance_name (
+    .iclk(iclk), 
+    .icle(icle), 
+    .ireset(ireset), 
+    .ovsalida(ovsalida)
+    );
+
+

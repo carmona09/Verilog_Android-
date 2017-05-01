@@ -1,0 +1,13 @@
+
+
+
+// Instantiate the module
+CVP instance_name (
+    .iClk(iClk), 
+    .iCE(iCE), 
+    .iReset(iReset), 
+    .ivEdad(ivEdad), 
+    .ovCVP(ovCVP)
+    );
+
+

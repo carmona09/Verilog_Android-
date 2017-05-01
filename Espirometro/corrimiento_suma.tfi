@@ -1,0 +1,16 @@
+
+
+
+// Instantiate the module
+corrimiento_suma instance_name (
+    .ivBits_Binary(ivBits_Binary), 
+    .iReset(iReset), 
+    .iCE(iCE), 
+    .iClk(iClk), 
+    .ovUnits(ovUnits), 
+    .ovDec(ovDec), 
+    .ovCent(ovCent), 
+    .ovMillar(ovMillar)
+    );
+
+
